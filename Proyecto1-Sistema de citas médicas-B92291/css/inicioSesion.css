@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.formulario input[type="password"],
+.formulario input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #7e7e7e;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #35587F;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgb(0, 178, 178);
+}
+
+
+/* Estilos para el contenedor de los enlaces "Regístrate" y "Recuperar contraseña" */
+.botones {
+    display: flex;
+}
+
+.formulario a {
+    margin-right: 10px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #35587F;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario a:last-child {
+    margin-right: 0;
+}
+
+.formulario a:hover {
+    background-color: rgb(0, 178, 178);
+}
+
+/* Desabilitar AgendaCitas */
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

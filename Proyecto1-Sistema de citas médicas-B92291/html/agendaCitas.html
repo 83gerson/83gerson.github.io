@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Citas Médicas</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/agendaCitas.css">
+    <script src="../js/agendaCitas.js"></script>
+    <script src="../js/inicioSesion.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Citas Médicas</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li id="inicioSesionLink"><a href="inicioSesion.html">Inicio de Sesión</a></li>
+                <li id="agendaCitasLink"><a href="agendaCitas.html">Agenda de citas</a></li>
+                <li><a href="busquedaMedicos.html">Búsqueda de médicos</a></li>
+                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="informacionContacto.html">Información de contacto</a></li>
+                <li><a href="preguntasFrecuentes.html">Preguntas frecuentes(FAQ)</a></li>
+                <li><a href="politicaPrivacidad.html">Política de privacidad y términos de uso</a></li>
+                <li id="cerrarSesionBtn"><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenido">
+            <div class="formulario">
+                <h2>Agendar cita</h2>
+                <div id="horariosDisponibles" class="horarios-disponibles">
+                    <!-- Aquí se llena dinámicamente la lista de horarios disponibles -->
+                </div>
+            </div>
+        </div>
+
+        <div id="contenedorCitas">
+            <h2>Citas Agendadas</h2>
+            <ul id="listaCitas">
+                <!-- Citas agendadas -->
+            </ul>
+            <button id="botonEditar" style="display: none;">Editar o Eliminar</button>
+        </div>
+
+        <div class="contenido">
+            <div class="formulario">
+                <h2>Agendar cita</h2>
+                <h2>2024</h2>
+                <div id="nombreMesActual"></div>
+                <div id="calendario" class="calendario"></div> <!-- Calendario -->
+                <!-- Botones para navegar por el calendario -->
+                <button id="mesAnterior">Mes Anterior</button>
+                <button id="mesSiguiente">Mes Siguiente</button>
+            </div>
+        </div>
+
+        <div>
+            <h1></h1>
+        </div>
+
+        <div class="contenido">
+            <div class="formulario">
+                <h2>Historial de Citas</h2>
+                <ul id="historialCitas">
+                    <!-- Historial de citas -->
+                </ul>
+            </div>
+        </div>
+
+        <div id="contenedorCitasPendientes">
+            <h2>Citas Pendientes de Confirmación - Simulación</h2>
+            <ul id="listaCitasPendientes">
+                <!-- Citas pendientes de confirmación -->
+            </ul>
+            <a href="medico.html" id="enlaceConfirmacion">Confirmación</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Síguenos en redes sociales</p>
+        <div>
+            <a href="">Facebook</a>
+        </div>
+
+        <p>Derechos de autor 2024</p>
+    </footer>
+</body>
+
+</html>

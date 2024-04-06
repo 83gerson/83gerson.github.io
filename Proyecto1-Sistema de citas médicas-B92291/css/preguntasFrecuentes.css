@@ -1,0 +1,36 @@
+.faq {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 60%;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.pregunta {
+    margin-bottom: 20px;
+}
+
+.pregunta h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #35587F;
+    padding: 10px;
+}
+
+.pregunta p {
+    display: none;
+    margin-top: 10px;
+}
+
+.pregunta.active p {
+    display: block;
+}
+
+/* Desabilitar AgendaCitas */
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

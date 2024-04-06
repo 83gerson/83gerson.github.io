@@ -1,0 +1,61 @@
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Desabilitar AgendaCitas */
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+h2 {
+    color: #35587F;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.equipo h3 {
+    color: #35587F;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.equipo p {
+    margin-bottom: 10px;
+}
+
+/* Imagenes */
+.medicos,
+.desarrolladores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.medico,
+.desarrollador {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+}
+
+.medico img,
+.desarrollador img {
+    width: 120px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.medico p,
+.desarrollador p {
+    margin-top: 10px;
+}
